@@ -30,4 +30,3 @@ print(parseXML("parse.xml", "bk112", "author"))
 #print(parseYAML("parse.yaml", 'Abbrev'))
 
 #https://microsoftedge.github.io/Demos/json-dummy-data/
-#https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ms762271(v=vs.85)
