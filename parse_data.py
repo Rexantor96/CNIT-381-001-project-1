@@ -25,8 +25,4 @@ def parseYAML(file, key):
     result = "{}".format(data[key])
     return result
 
-print(parseXML("/home/willw/test.xml", 'edit-config', 'test-option'))
-#print(parseJSON("parse.json", 'name'))
-#print(parseYAML("parse.yaml", 'name'))
-
 #https://microsoftedge.github.io/Demos/json-dummy-data/
