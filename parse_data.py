@@ -16,17 +16,17 @@ def parseXML(file, tag, value):
 def parseJSON(file, key):
     with open(file, "r") as jsonFile:
         data = json.load(jsonFile)
-    result = "{}".format(data['name'])
+    result = "{}".format(data[key])
     return result
 
 def parseYAML(file, key):
     with open(file, "r") as yamlFile:
         data = yaml.safe_load(yamlFile)
-    result = "{}".format(data['name'])
+    result = "{}".format(data[key])
     return result
 
-print(parseXML("parse.xml", "bk112", "author"))
-#print(parseJSON("parse.json", 'Abbrev'))
-#print(parseYAML("parse.yaml", 'Abbrev'))
+print(parseXML("/home/willw/test.xml", 'edit-config', 'test-option'))
+#print(parseJSON("parse.json", 'name'))
+#print(parseYAML("parse.yaml", 'name'))
 
 #https://microsoftedge.github.io/Demos/json-dummy-data/
