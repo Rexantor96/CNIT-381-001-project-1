@@ -2,10 +2,10 @@ import pytest
 from parse_data import *
 
 def test_parseXML():
-    result = parseXML('parse.xml', 'edit-config', 'test-option')
-    assert result == 'set'
-    result = parseXML('parse.xml', 'edit-config', 'default-operation')
-    assert result == 'merge'
+    result = parseXML('parse.xml', 'edit-config', 'interface')
+    assert result == 'TenGigE0/0/0/0'
+    result = parseXML('parse.xml', 'edit-config', 'subinterfaces')
+    assert result == '2'
 
 def test_parseJSON():
     result = parseJSON("parse.json", 'name')
